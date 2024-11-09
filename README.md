@@ -1,36 +1,24 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Next.js Animations Project
 
-## Getting Started
+This is a practice project built with [Next.js](https://nextjs.org/), [TypeScript](https://www.typescriptlang.org/), and [Tailwind CSS](https://tailwindcss.com/) to explore and implement CSS animations using Tailwind's utility classes & custom classes.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Animations**: Smooth and responsive animations created with Tailwind CSS, adding visual engagement to the interface.
+- **Next.js**: A powerful framework for building optimized, server-rendered applications with React.
+- **TypeScript**: Enhances JavaScript with type definitions for improved code quality and development speed.
+- **Tailwind CSS**: Utility-first CSS framework that allows for fast styling and customization.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Animation Previews
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+#### Infinite Scroll Animation
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+This smooth scrolling animation loops indefinitely, ideal for displaying continuous content.
 
-## Learn More
+![Infinite Scroll Animation](src/assets/gifs/infinitescroll.gif)
 
-To learn more about Next.js, take a look at the following resources:
+#### Reveal Animation on Hover
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+This animation reveals content when hovered, adding interactivity and highlighting.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+![Reveal Animation on Hover](src/assets/gifs/revealonhover.gif)

@@ -19,3 +19,75 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Image Container Styles */
+.image-container {
+  /* Preserves 3D transformations for child elements */
+  transform-style: preserve-3d;
+  /* Sets a perspective distance for 3D effects */
+  transform: perspective(1000px);
+}
+
+/* Base Styles for Image Items */
+.image-container .item {
+  /* Transition duration for smooth animations */
+  transition: 0.5s;
+  /* Initial brightness level */
+  filter: brightness(0.06);
+}
+
+/* Hover Effect for a Single Image Item */
+.image-container .item:hover {
+  /* Increases brightness on hover */
+  filter: brightness(1);
+  /* Moves the image forward on the z-axis */
+  transform: translateZ(200px);
+}
+
+/* Hover Effect for Subsequent Image Items (Sibling 1) */
+.image-container .item:hover + * {
+  /* Reduces brightness */
+  filter: brightness(0.6);
+  /* Moves the image forward and rotates slightly */
+  transform: translateZ(150px) rotateY(40deg);
+}
+
+/* Hover Effect for Subsequent Image Items (Sibling 2) */
+.image-container .item:hover + * + * {
+  /* Reduces brightness further */
+  filter: brightness(0.4);
+  /* Moves the image forward and rotates slightly */
+  transform: translateZ(70px) rotateY(20deg);
+}
+
+/* Hover Effect for Subsequent Image Items (Sibling 3) */
+.image-container .item:hover + * + * + * {
+  /* Reduces brightness further */
+  filter: brightness(0.2);
+  /* Moves the image forward and rotates slightly */
+  transform: translateZ(10px) rotateY(10deg);
+}
+
+/* Hover Effect for Previous Image Items (Sibling 1) */
+.image-container .item:has(+ *:hover) {
+  /* Reduces brightness */
+  filter: brightness(0.6);
+  /* Moves the image forward and rotates slightly in the opposite direction */
+  transform: translateZ(150px) rotateY(-40deg);
+}
+
+/* Hover Effect for Previous Image Items (Sibling 2) */
+.image-container .item:has(+ * + *:hover) {
+  /* Reduces brightness further */
+  filter: brightness(0.4);
+  /* Moves the image forward and rotates slightly in the opposite direction */
+  transform: translateZ(70px) rotateY(-20deg);
+}
+
+/* Hover Effect for Previous Image Items (Sibling 3) */
+.image-container .item:has(+ * + * + *:hover) {
+  /* Reduces brightness further */
+  filter: brightness(0.2);
+  /* Moves the image forward and rotates slightly in the opposite direction */
+  transform: translateZ(10px) rotateY(-10deg);
+}
