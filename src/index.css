@@ -1,10 +1,18 @@
+/*
+This is a global css
+*/
+
+@import "tailwindcss";
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
+  /* Tells browser that the root document supports both light & dark mode */
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
+  /* This is initial styling assuming dark mode */
+  /* color: rgba(255, 255, 255, 0.87); */
   background-color: #242424;
 
   font-synthesis: none;
@@ -13,6 +21,7 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* 
 a {
   font-weight: 500;
   color: #646cff;
@@ -52,9 +61,14 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
-}
+} */
 
-@media (prefers-color-scheme: light) {
+/* This is like CSS condition 
+It checks if the system has any preference over color scheme, if it's light then it modifies the
+already set color (assuming dark mode) 
+*/
+
+/* @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
     background-color: #ffffff;
@@ -65,4 +79,4 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
-}
+} */
