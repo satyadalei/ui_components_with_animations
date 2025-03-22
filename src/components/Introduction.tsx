@@ -23,7 +23,7 @@ const Introduction = () => {
     }, [currentWord])
 
     return (
-        <section className="py-24 lg:py-40" >
+        <section className="py-24 lg:py-28" >
             <div className="container px-2" >
                 <div className="sticky top-20 lg:top-10" >
                     <div className="text-center" >
@@ -43,8 +43,7 @@ const Introduction = () => {
                                 )
                             })}
                         </span>
-                        <br />
-                        <span className="text-lime-400 block" >That&apos;s why I am here.</span>
+                        <span className="text-lime-400 block mt-3" >That&apos;s why I am here.</span>
                     </div>
                 </div>
                 <div ref={scrollTarget} className="h-[150vh]" >
