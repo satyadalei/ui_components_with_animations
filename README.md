@@ -1,24 +1,50 @@
-# Next.js Animations Project
+# React + TypeScript + Vite
 
-This is a practice project built with [Next.js](https://nextjs.org/), [TypeScript](https://www.typescriptlang.org/), and [Tailwind CSS](https://tailwindcss.com/) to explore and implement CSS animations using Tailwind's utility classes & custom classes.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## Features
+Currently, two official plugins are available:
 
-- **Animations**: Smooth and responsive animations created with Tailwind CSS, adding visual engagement to the interface.
-- **Next.js**: A powerful framework for building optimized, server-rendered applications with React.
-- **TypeScript**: Enhances JavaScript with type definitions for improved code quality and development speed.
-- **Tailwind CSS**: Utility-first CSS framework that allows for fast styling and customization.
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-### Animation Previews
+## Expanding the ESLint configuration
 
-#### Infinite Scroll Animation
+If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
 
-This smooth scrolling animation loops indefinitely, ideal for displaying continuous content.
+- Configure the top-level `parserOptions` property like this:
 
-![Infinite Scroll Animation](src/assets/gifs/infinitescroll.gif)
+```js
+export default tseslint.config({
+  languageOptions: {
+    // other options...
+    parserOptions: {
+      project: ['./tsconfig.node.json', './tsconfig.app.json'],
+      tsconfigRootDir: import.meta.dirname,
+    },
+  },
+})
+```
 
-#### Reveal Animation on Hover
+- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
+- Optionally add `...tseslint.configs.stylisticTypeChecked`
+- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
 
-This animation reveals content when hovered, adding interactivity and highlighting.
+```js
+// eslint.config.js
+import react from 'eslint-plugin-react'
 
-![Reveal Animation on Hover](src/assets/gifs/revealonhover.gif)
+export default tseslint.config({
+  // Set the react version
+  settings: { react: { version: '18.3' } },
+  plugins: {
+    // Add the react plugin
+    react,
+  },
+  rules: {
+    // other rules...
+    // Enable its recommended rules
+    ...react.configs.recommended.rules,
+    ...react.configs['jsx-runtime'].rules,
+  },
+})
+```
