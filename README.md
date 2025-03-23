@@ -1,50 +1,24 @@
-# React + TypeScript + Vite
+# UI Components Practice
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a practice ground for various UI components and effects using React, TypeScript, and Vite. Below are some of the features and components implemented:
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Text Reveal on Scroll
+- **Description**: This feature reveals text as the user scrolls down the page. It uses the `framer-motion` library to animate the text appearance based on the scroll position.
+- **Implementation**: The `Introduction` component demonstrates this effect by progressively revealing words as the user scrolls.
 
-## Expanding the ESLint configuration
+### Infinite Scroll
+- **Description**: Infinite scroll allows content to load dynamically as the user scrolls down the page, providing a seamless browsing experience.
+- **Implementation**: The `LogoTicker` component showcases an infinite scrolling effect, where logos continuously scroll across the screen.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Technologies Used
+- **React**: For building the user interface.
+- **TypeScript**: For type safety and better developer experience.
+- **Vite**: For fast development and build processes.
+- **Framer Motion**: For animations and scroll-based effects.
+- **Tailwind CSS**: For styling the components.
 
-- Configure the top-level `parserOptions` property like this:
+## Getting Started
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+To run this project locally, follow the setup instructions provided in the main README section.
