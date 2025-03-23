@@ -1,6 +1,7 @@
 import "./App.css";
 import Faq from "./components/Faq";
 import Introduction from "./components/Introduction";
+import LogoTicker from "./components/LogoTicker";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       </div>
       <Introduction />
       <Faq />
+      <LogoTicker />
     </>
   );
 }
