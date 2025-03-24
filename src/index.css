@@ -8,12 +8,13 @@ This is a global css
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
+  background-color: rgb(10, 10, 10);
 
   /* Tells browser that the root document supports both light & dark mode */
   color-scheme: light dark;
   /* This is initial styling assuming dark mode */
   /* color: rgba(255, 255, 255, 0.87); */
-  background-color: #242424;
+  /* background-color: #242424; */
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
