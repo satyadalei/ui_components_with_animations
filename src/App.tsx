@@ -3,6 +3,7 @@ import "./App.css";
 // import Introduction from "./components/Introduction";
 // import LogoTicker from "./components/LogoTicker";
 import Navbar from "./components/Navbar";
+import TShirt from "./components/TShirt";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       {/* <Introduction />
       <Faq />
       <LogoTicker /> */}
+      <TShirt />
     </>
   );
 }
