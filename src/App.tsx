@@ -9,7 +9,7 @@ import TShirt from "./components/TShirt";
 function App() {
   return (
     <>
-      <TanstackTable />
+      {/* <TanstackTable /> */}
       <Navbar />
       {/* <div>
         <div className="h-[80vh] flex justify-center items-center relative">
@@ -22,7 +22,7 @@ function App() {
       <Introduction />
       <Faq />
       <LogoTicker />
-      <TShirt />
+      {/* <TShirt /> */}
     </>
   );
 }
