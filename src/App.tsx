@@ -1,13 +1,15 @@
 import "./App.css";
-// import Faq from "./components/Faq";
-// import Introduction from "./components/Introduction";
-// import LogoTicker from "./components/LogoTicker";
+import Faq from "./components/Faq";
+import Introduction from "./components/Introduction";
+import LogoTicker from "./components/LogoTicker";
 import Navbar from "./components/Navbar";
+import TanstackTable from "./components/TanstackTable";
 import TShirt from "./components/TShirt";
 
 function App() {
   return (
     <>
+      {/* <TanstackTable /> */}
       <Navbar />
       {/* <div>
         <div className="h-[80vh] flex justify-center items-center relative">
@@ -17,10 +19,10 @@ function App() {
           </div>
         </div>
       </div> */}
-      {/* <Introduction />
+      <Introduction />
       <Faq />
-      <LogoTicker /> */}
-      <TShirt />
+      <LogoTicker />
+      {/* <TShirt /> */}
     </>
   );
 }

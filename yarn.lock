@@ -356,6 +356,18 @@
     lightningcss "1.29.2"
     tailwindcss "4.0.14"
 
+"@tanstack/react-table@^8.21.2":
+  version "8.21.2"
+  resolved "https://registry.npmjs.org/@tanstack/react-table/-/react-table-8.21.2.tgz"
+  integrity sha512-11tNlEDTdIhMJba2RBH+ecJ9l1zgS2kjmexDPAraulc8jeNA4xocSNeyzextT0XJyASil4XsCYlJmf5jEWAtYg==
+  dependencies:
+    "@tanstack/table-core" "8.21.2"
+
+"@tanstack/table-core@8.21.2":
+  version "8.21.2"
+  resolved "https://registry.npmjs.org/@tanstack/table-core/-/table-core-8.21.2.tgz"
+  integrity sha512-uvXk/U4cBiFMxt+p9/G7yUWI/UbHYbyghLCjlpWZ3mLeIZiUBSKcUnw9UnKkdRz7Z/N4UBuFLWQdJCjUe7HjvA==
+
 "@types/babel__core@^7.20.5":
   version "7.20.5"
   resolved "https://registry.npmjs.org/@types/babel__core/-/babel__core-7.20.5.tgz"
@@ -1232,7 +1244,7 @@ queue-microtask@^1.2.2:
   resolved "https://registry.npmjs.org/queue-microtask/-/queue-microtask-1.2.3.tgz"
   integrity sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==
 
-"react-dom@^18.0.0 || ^19.0.0", react-dom@^18.3.1:
+"react-dom@^18.0.0 || ^19.0.0", react-dom@^18.3.1, react-dom@>=16.8:
   version "18.3.1"
   resolved "https://registry.npmjs.org/react-dom/-/react-dom-18.3.1.tgz"
   integrity sha512-5m4nQKp+rZRb09LNH59GM4BxTh9251/ylbKIbpe7TpGxfJ+9kv6BLkLBXIjjspbgbnIBNqlI23tRnTWT0snUIw==
@@ -1245,7 +1257,7 @@ react-refresh@^0.14.2:
   resolved "https://registry.npmjs.org/react-refresh/-/react-refresh-0.14.2.tgz"
   integrity sha512-jCvmsr+1IUSMUyzOkRcvnVbX3ZYC6g9TDrDbFuFmRDq7PD4yaGbLKNQL6k2jnArV8hjYxh7hVhAZB6s9HDGpZA==
 
-"react@^18.0.0 || ^19.0.0", react@^18.3.1:
+"react@^18.0.0 || ^19.0.0", react@^18.3.1, react@>=16.8:
   version "18.3.1"
   resolved "https://registry.npmjs.org/react/-/react-18.3.1.tgz"
   integrity sha512-wS+hAgJShR0KhEvPJArfuPVN1+Hz1t0Y6n5jLrGQbkb4urgPE/0Rve+1kMB1v/oWgHgm4WIcV+i7F2pTVj+2iQ==
