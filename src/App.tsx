@@ -1,6 +1,7 @@
 import "./App.css";
 import CircularOrbits from "./components/CircularOrbits";
 import DocumentEditorComponent from "./components/DocumentEditorComponent";
+import DotPatterns from "./components/DotPatterns";
 import Faq from "./components/Faq";
 import Introduction from "./components/Introduction";
 import LogoTicker from "./components/LogoTicker";
@@ -26,6 +27,7 @@ function App() {
       {/* <DocumentEditorComponent /> */}
       {/* <TShirt /> */}
       <CircularOrbits />
+      <DotPatterns />
     </>
   );
 }

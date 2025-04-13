@@ -33,7 +33,7 @@ const LogoTicker = () => {
                     <motion.div className="flex flex-none gap-24 pr-24"
 
                         animate={{
-                           x: "-50%"
+                            x: "-50%"
                         }}
 
                         transition={{
