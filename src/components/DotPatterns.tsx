@@ -37,3 +37,25 @@ const DotPatterns = () => {
 }
 
 export default DotPatterns
+
+export const DashedPattern = () => {
+    return <section className='h-screen bg-white flex justify-center items-center' >
+        <div className='border border-red-500 ' >
+            <div className="relative">
+                {Array.from({ length: 24 }).map((_, i) => {
+                    return (
+                        <div key={i} style={{
+                            rotate: `${(360 / 24) * i}deg`
+                        }} className='flex gap-2 my-2 absolute left-1/2 top-1/2 origin-left' >
+                            {Array.from({ length: 10 }).map((_, index) => {
+                                return (
+                                    <div key={index} className='w-5 h-1 bg-gray-200 rounded-md' ></div>
+                                )
+                            })}
+                        </div>
+                    )
+                })}
+            </div>
+        </div>
+    </section>
+}
