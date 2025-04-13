@@ -1,11 +1,13 @@
 import "./App.css";
+import CircularOrbits from "./components/CircularOrbits";
+import DocumentEditorComponent from "./components/DocumentEditorComponent";
+import DotPatterns from "./components/DotPatterns";
 import Faq from "./components/Faq";
 import Introduction from "./components/Introduction";
 import LogoTicker from "./components/LogoTicker";
 import Navbar from "./components/Navbar";
-import TanstackTable from "./components/TanstackTable";
-import TShirt from "./components/TShirt";
-
+// import TanstackTable from "./components/TanstackTable";
+// import TShirt from "./components/TShirt";
 function App() {
   return (
     <>
@@ -22,7 +24,10 @@ function App() {
       <Introduction />
       <Faq />
       <LogoTicker />
+      {/* <DocumentEditorComponent /> */}
       {/* <TShirt /> */}
+      <CircularOrbits />
+      <DotPatterns />
     </>
   );
 }
