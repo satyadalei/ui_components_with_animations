@@ -6,6 +6,7 @@ import Faq from "./components/Faq";
 import Introduction from "./components/Introduction";
 import LogoTicker from "./components/LogoTicker";
 import Navbar from "./components/Navbar";
+import SkillsSection from "./components/SkillsSection";
 // import TanstackTable from "./components/TanstackTable";
 // import TShirt from "./components/TShirt";
 function App() {
@@ -29,6 +30,7 @@ function App() {
       <CircularOrbits />
       <DotPatterns />
       <DashedPattern />
+      <SkillsSection />
     </>
   );
 }
