@@ -8,6 +8,7 @@ import Introduction from "./components/Introduction";
 import LogoTicker from "./components/LogoTicker";
 import Navbar from "./components/Navbar";
 import SkillsSection from "./components/SkillsSection";
+import Pentagon from "./components/Pentagon";
 
 import { useRef } from "react";
 
@@ -57,7 +58,8 @@ function App() {
       <DotPatterns />
       <DashedPattern />
       <SkillsSection />
-      <TextIgniter ref={editorRef} features={features} height={"400px"} />;
+      {/* <TextIgniter ref={editorRef} features={features} height={"400px"} />; */}
+      <Pentagon />
     </>
   );
 }
