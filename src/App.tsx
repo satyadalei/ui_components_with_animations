@@ -9,6 +9,7 @@ import LogoTicker from "./components/LogoTicker";
 import Navbar from "./components/Navbar";
 import SkillsSection from "./components/SkillsSection";
 import Pentagon from "./components/Pentagon";
+import { Routes, Route } from "react-router"
 
 import { useRef } from "react";
 
@@ -38,10 +39,13 @@ function App() {
 
 
   return (
-    <>
-      {/* <TanstackTable /> */}
-      <Navbar />
-      {/* <div>
+    <Routes>
+
+      <Route path="/" element={<>
+        <div>
+          {/* <TanstackTable /> */}
+          <Navbar />
+          {/* <div>
         <div className="h-[80vh] flex justify-center items-center relative">
           <div className="w-px h-full relative">
             <div className="h-full absolute inset-1/2 -translate-x-1/2 -translate-y-1/2 w-px bg-gradient-to-b from-transparent via-blue-500 to-transparent">
@@ -49,18 +53,22 @@ function App() {
           </div>
         </div>
       </div> */}
-      <Introduction />
-      <Faq />
-      <LogoTicker />
-      {/* <DocumentEditorComponent /> */}
-      {/* <TShirt /> */}
-      <CircularOrbits />
-      <DotPatterns />
-      <DashedPattern />
-      <SkillsSection />
-      {/* <TextIgniter ref={editorRef} features={features} height={"400px"} />; */}
-      <Pentagon />
-    </>
+          <Introduction />
+          <Faq />
+          <LogoTicker />
+          {/* <DocumentEditorComponent /> */}
+          {/* <TShirt /> */}
+          <CircularOrbits />
+          <DotPatterns />
+          <DashedPattern />
+          <SkillsSection />
+          {/* <TextIgniter ref={editorRef} features={features} height={"400px"} />; */}
+          <Pentagon />
+        </div>
+      </>} >
+
+      </Route>
+    </Routes>
   );
 }
 
